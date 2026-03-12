@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-image: url("Img/MainBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding-top si tienes contenido debajo del navbar para que no quede tapado */
+  padding-top: 56px; 
+}
+
+nav.navbar {
+  position: fixed;       /* Fija el navbar en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;         /* Por encima de todo */
+  background: transparent; /* Fondo transparente */
+  margin: 0;
+  padding: 0.5rem 1rem;  /* Ajusta el padding a tu gusto */
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd !important;
+}
+
+.navbar-nav .nav-selected {
+  transform: translateY(4px);
+  font-weight: 700;
+}
+
+.hero-title {
+  position: absolute;
+  bottom: 40px;       /* Pegado abajo, con un poco de espacio */
+  left: 40px;         /* Pegado a la izquierda, con un poco de espacio */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* sombra para destacar */
+  max-width: 300px;    /* opcional, para controlar ancho del texto */
+  line-height: 1.1;    /* para que las líneas queden juntas */
+}
